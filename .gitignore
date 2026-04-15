@@ -6,3 +6,12 @@ CLAUDE.md
 PRD.md
 .claude/
 tests/
+
+# AI tool configs (personal preference, not needed in repo)
+.agent/
+.agents/
+.codex/
+.cursor/
+.gemini/
+.opencode/
+.windsurf/
