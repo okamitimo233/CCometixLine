@@ -1,0 +1,7 @@
+{"file": ".trellis/spec/backend/directory-structure.md", "reason": "确认新增 segment 模块的文件位置约定"}
+{"file": ".trellis/spec/backend/error-handling.md", "reason": "文件读取失败时的错误处理模式"}
+{"file": ".trellis/spec/backend/quality-guidelines.md", "reason": "代码质量标准和测试要求"}
+{"file": "src/core/segments/mod.rs", "reason": "Segment trait 定义和导出模式"}
+{"file": "src/core/segments/git.rs", "reason": "参考实现：调用外部命令和文件系统操作"}
+{"file": "src/config/types.rs", "reason": "SegmentId 枚举扩展位置"}
+{"file": "src/core/statusline.rs", "reason": "collect_all_segments 函数需要添加 Trellis 分支"}

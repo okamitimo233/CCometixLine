@@ -1,0 +1,4 @@
+{"file": ".trellis/spec/backend/quality-guidelines.md", "reason": "验收前检查代码质量标准"}
+{"file": ".trellis/spec/backend/error-handling.md", "reason": "验证错误处理和优雅降级"}
+{"file": "src/core/segments/mod.rs", "reason": "验证 TrellisSegment 正确导出"}
+{"file": "src/config/types.rs", "reason": "验证 SegmentId::Trellis 枚举变体"}
