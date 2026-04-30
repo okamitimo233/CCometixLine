@@ -7,6 +7,27 @@
 ![Language:Rust](https://img.shields.io/static/v1?label=Language&message=Rust&color=orange&style=flat-square)
 ![License:MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue&style=flat-square)
 
+## Fork
+
+这是 [CCometixLine](https://github.com/Haleclipse/CCometixLine) 的修改版本，新增了 Trellis 工作流集成功能。
+
+### TrellisSegment
+
+TrellisSegment 是一个CCometixLine的状态栏扩展项，用于显示 Trellis 任务信息：
+
+- **当前任务显示**：显示任务标题、优先级和状态
+- **开发者身份**：显示当前开发者名称
+- **任务数量**：显示活跃任务数量
+
+> **注意**：TrellisSegment 在项目根目录下存在 `.trellis/` 目录时才会激活。更多关于 Trellis 的信息请参见 [Trellis Document](https://docs.trytrellis.app/zh)。
+
+### 开发工具
+
+本 Fork 版本使用了以下额外的开发工具：
+
+- **Trellis** - 任务管理和规格系统（`.trellis/`）
+- **GitNexus MCP** - 代码知识图谱和影响分析
+
 ## 截图
 
 ![CCometixLine](assets/img1.png)

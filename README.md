@@ -7,6 +7,28 @@ A high-performance Claude Code statusline tool written in Rust with Git integrat
 ![Language:Rust](https://img.shields.io/static/v1?label=Language&message=Rust&color=orange&style=flat-square)
 ![License:MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue&style=flat-square)
 
+## Fork
+
+This is a modified version of [CCometixLine](https://github.com/Haleclipse/CCometixLine) with additional features for Trellis workflow integration.
+
+### TrellisSegment
+
+TrellisSegment is a statusline extension for CCometixLine that displays Trellis task information:
+
+- **Current Task Display**: Shows task title, priority, and status
+- **Developer Identity**: Displays the current developer name
+- **Task Count**: Shows number of active tasks
+- **Session Info**: Model, context usage, branch, duration, rate limits
+
+> **Note**: TrellisSegment activates when a `.trellis/` directory exists in your project root. For more information, see [Trellis Document](https://docs.trytrellis.app).
+
+### Development Tools
+
+This fork includes additional development tools:
+
+- **Trellis** - Task management and specification system (`.trellis/`)
+- **GitNexus MCP** - Code knowledge graph and impact analysis
+
 ## Screenshots
 
 ![CCometixLine](assets/img1.png)
