@@ -128,10 +128,36 @@ src/
 
 ### Adding a New Segment
 
-1. Create `src/core/segments/<name>.rs`
-2. Define struct, implement `Default` and `Segment` trait
-3. Add to `mod.rs` exports and `collect_all_segments()` match
-4. Add `SegmentId` variant in `src/config/types.rs`
+1. **Create segment file**: `src/core/segments/<name>.rs`
+   - Define struct, implement `Default` and `Segment` trait
+   - Return `Option<SegmentData>` from `collect()` - use `None` for graceful degradation
+
+2. **Register in core layer**:
+   - Add to `mod.rs` exports
+   - Add branch in `collect_all_segments()` in `statusline.rs`
+
+3. **Add configuration**:
+   - Add `SegmentId` variant in `src/config/types.rs`
+
+4. **Update UI components** (required for TUI):
+   - `src/ui/app.rs` - Add match arm for new `SegmentId`
+   - `src/ui/components/preview.rs` - Add mock data for preview
+   - `src/ui/components/segment_list.rs` - Add segment name display
+   - `src/ui/components/settings.rs` - Add segment name display
+
+5. **Add to all theme presets**:
+   - Each `src/ui/themes/theme_*.rs` needs a `<name>_segment()` function
+   - Segment is typically disabled by default in themes
+
+**Pattern: Graceful Degradation**
+```rust
+// In collect() - return None when dependencies not available
+fn collect(&self, input: &InputData) -> Option<SegmentData> {
+    let info = self.get_info(&input.workspace.current_dir)?;  // Returns None if not found
+    // ... build SegmentData
+    Some(SegmentData { primary, secondary, metadata })
+}
+```
 
 ### Adding a New UI Component
 
