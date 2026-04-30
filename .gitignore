@@ -10,3 +10,6 @@ tests/
 
 # GitNexus embedding model cache
 undefined/
+
+# Python
+__pycache__/
