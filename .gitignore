@@ -6,3 +6,7 @@ CLAUDE.md
 PRD.md
 .claude/
 tests/
+.gitnexus
+
+# GitNexus embedding model cache
+undefined/
