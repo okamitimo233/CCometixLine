@@ -38,3 +38,37 @@ Filled backend development guidelines (directory structure, error handling, data
 ### Next Steps
 
 - None - task complete
+
+
+## Session 2: TrellisSegment 集成
+
+**Date**: 2026-04-30
+**Task**: TrellisSegment 集成
+**Branch**: `feature/integrate-trellis-ecosystem`
+
+### Summary
+
+新增 TrellisSegment 显示 Trellis 任务状态，支持 context_key 解析和优雅降级
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `abe287a` | (see git log) |
+| `4aa8d46` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
