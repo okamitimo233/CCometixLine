@@ -72,3 +72,36 @@ Filled backend development guidelines (directory structure, error handling, data
 ### Next Steps
 
 - None - task complete
+
+
+## Session 3: Update docs for Trellis integration
+
+**Date**: 2026-04-30
+**Task**: Update docs for Trellis integration
+**Branch**: `feature/integrate-trellis-ecosystem`
+
+### Summary
+
+Added Fork section to README documenting TrellisSegment feature; moved statusline.py to scripts/
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `f13acba` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
