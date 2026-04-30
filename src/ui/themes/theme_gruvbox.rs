@@ -162,3 +162,21 @@ pub fn usage_segment() -> SegmentConfig {
         },
     }
 }
+
+pub fn trellis_segment() -> SegmentConfig {
+    SegmentConfig {
+        id: SegmentId::Trellis,
+        enabled: false,
+        icon: IconConfig {
+            plain: "📋".to_string(),
+            nerd_font: "\u{f44a}".to_string(),
+        },
+        colors: ColorConfig {
+            icon: Some(AnsiColor::Color256 { c256: 214 }), // Gruvbox yellow
+            text: Some(AnsiColor::Color256 { c256: 109 }), // Gruvbox cyan
+            background: None,
+        },
+        styles: TextStyleConfig { text_bold: true },
+        options: HashMap::new(),
+    }
+}

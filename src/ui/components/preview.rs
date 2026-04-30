@@ -183,6 +183,18 @@ impl PreviewComponent {
                         map
                     },
                 },
+                SegmentId::Trellis => SegmentData {
+                    primary: "[P2] Sample Task (in_progress)".to_string(),
+                    secondary: "developer · 3 tasks".to_string(),
+                    metadata: {
+                        let mut map = HashMap::new();
+                        map.insert("priority".to_string(), "P2".to_string());
+                        map.insert("status".to_string(), "in_progress".to_string());
+                        map.insert("developer".to_string(), "developer".to_string());
+                        map.insert("task_count".to_string(), "3".to_string());
+                        map
+                    },
+                },
             };
 
             segments_data.push((segment_config.clone(), mock_data));

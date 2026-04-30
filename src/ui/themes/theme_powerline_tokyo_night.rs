@@ -258,3 +258,33 @@ pub fn usage_segment() -> SegmentConfig {
         },
     }
 }
+
+pub fn trellis_segment() -> SegmentConfig {
+    SegmentConfig {
+        id: SegmentId::Trellis,
+        enabled: false,
+        icon: IconConfig {
+            plain: "📋".to_string(),
+            nerd_font: "\u{f44a}".to_string(),
+        },
+        colors: ColorConfig {
+            icon: Some(AnsiColor::Rgb {
+                r: 252,
+                g: 167,
+                b: 234,
+            }),
+            text: Some(AnsiColor::Rgb {
+                r: 252,
+                g: 167,
+                b: 234,
+            }),
+            background: Some(AnsiColor::Rgb {
+                r: 61,
+                g: 89,
+                b: 161,
+            }),
+        },
+        styles: TextStyleConfig::default(),
+        options: HashMap::new(),
+    }
+}
